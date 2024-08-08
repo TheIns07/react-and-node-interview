@@ -1,0 +1,42 @@
+.article-card {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px 0;
+    max-width: 800px;
+  }
+  
+  .article-image {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 16px;
+  }
+  
+  .article-content {
+    flex: 1;
+  }
+  
+  .article-content h2 {
+    margin: 0;
+  }
+  
+  .article-content p {
+    margin: 8px 0;
+  }
+  
+  .article-content button {
+    margin: 8px 0;
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .article-content button:hover {
+    text-decoration: underline;
+  }
+
+
+  
