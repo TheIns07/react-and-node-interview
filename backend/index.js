@@ -5,11 +5,13 @@ const DataLoader = require('./src/data/data');
 const Routes = require('./src/routes/routes');
 const setupSwagger = require('./src/docs/Swagger');
 
+require('dotenv').config();
+
 const app = express();
 const PORT = process.env.PORT || 3006;
 
 app.use(cors({
-    origin: process.env.ORIGIN || 'http://localhost:5173'
+    origin: process.env.ORIGIN || "http://localhost:5173"
 }));
 
 app.use(express.json());
