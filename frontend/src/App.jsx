@@ -24,8 +24,10 @@ function App() {
     getArticles();
   }, [])
 
-  if (loading) return <p>Loading articles...</p>;
-  if (error) return <p>Error: Articles not fetched.{error.message}</p>;
+  
+  if (loading) return  <h1 style={{ fontSize: '3rem', fontWeight: 'bold', textAlign: 'center' }}>Loading articles...</h1> ;
+  if (error) return <h1 style={{ fontSize: '3rem', fontWeight: 'bold', textAlign: 'center' }}>Error: Articles not fetched.</h1>;
+  
 
   return (
     <>
